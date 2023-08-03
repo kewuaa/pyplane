@@ -1,2 +1,22 @@
-[tool.jedi]
+[project]
+name = "pyplane"
+version = "0.1.0"
+description = "plane game"
+authors = [
+    {name = "kewuaa"}
+]
+dependencies = [
+    "pygame",
+    "tomli"
+]
+readme = "README.md"
+scripts = { pyplane = "pyplane:run" }
+
+[tool.setuptools]
+packages = {find = {where = ["./src"]}}
+package-dir = {"" = "./src"}
+package-data = { "pyplane.images" = ["**/*.png"], "pyplane.config" = ["*.toml"]}
+
+[tool.pyright]
 venv = 'game'
+include = ["./src"]

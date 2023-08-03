@@ -1,0 +1,3 @@
+[project-run]
+command:python=$(+pyenv:python) -m pyplane
+cwd=<root>/src
