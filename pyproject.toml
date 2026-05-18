@@ -16,7 +16,3 @@ scripts = { pyplane = "pyplane:run" }
 packages = {find = {where = ["./src"]}}
 package-dir = {"" = "./src"}
 package-data = { "pyplane.images" = ["**/*.png"], "pyplane.config" = ["*.toml"]}
-
-[tool.pyright]
-venv = 'game'
-include = ["./src"]
